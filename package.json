@@ -1,0 +1,35 @@
+{
+  "name": "@matter-in-motion/loggers-pino",
+  "version": "1.0.0",
+  "description": "Matter in Motion Extension. Logger Pino",
+  "main": "index.js",
+  "scripts": {
+    "test": "nyc ava"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/matter-in-motion/logger-pino.git"
+  },
+  "keywords": [
+    "matter-in-motion",
+    "mmextension",
+    "logger",
+    "extension",
+    "pino"
+  ],
+  "author": "Alexey Novikov <v@2dubs.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/matter-in-motion/app/issues"
+  },
+  "homepage": "https://github.com/matter-in-motion/app#readme",
+  "dependencies": {
+    "pino": "^5.13.0",
+    "pino-pretty": "^3.2.0"
+  },
+  "devDependencies": {
+    "@matter-in-motion/app": "^1.0.0",
+    "ava": "^2.2.0",
+    "nyc": "^14.1.1"
+  }
+}
