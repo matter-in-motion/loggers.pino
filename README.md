@@ -1,32 +1,32 @@
 # Matter In Motion
 
-[![NPM Version](https://img.shields.io/npm/v/matter-in-motion/app.svg?style=flat-square)](https://www.npmjs.com/package/matter-in-motion/app)
-[![NPM Downloads](https://img.shields.io/npm/dt/matter-in-motion/app.svg?style=flat-square)](https://www.npmjs.com/package/matter-in-motion/app)
+[![NPM Version](https://img.shields.io/npm/v/matter-in-motion/logger.pino.svg?style=flat-square)](https://www.npmjs.com/package/matter-in-motion/logger.pino)
+[![NPM Downloads](https://img.shields.io/npm/dt/matter-in-motion/logger.pino.svg?style=flat-square)](https://www.npmjs.com/package/matter-in-motion/logger.pino)
 
 **Node.js framework for building applications (cli, server, etc...).**
 
-## App
+## Pino
 
-Genereic app class, the foundation of your application. It has only two functions:
-
-1. Manage settings for different environments.
-2. Load extensions
+Matter In Motion extension that simply exposes pino logger as `loggers.pino` unit
 
 ### Installation
 
-`npm i @matter-in-motion/app`
+`npm i @matter-in-motion/loggers.pino`
+
+### Settings
+
+- pino
+  - options
+  - destination
+
+Both settings are described [here](https://github.com/pinojs/pino/blob/master/docs/api.md)
 
 ### Usage
 
-1. [Getting started](https://github.com/matter-in-motion/app/blob/master/docs/getting-started.md) — explanations of framework's architecture and a tutorial with all the steps to make an application from scratch
-2. Clone the [demo application](https://github.com/matter-in-motion/demo).
+```js
+const pino = app.require('loggers.pino').get('app');
+```
 
-### Content
-
-* [App](https://github.com/matter-in-motion/mm/blob/master/docs/app.md)
-* [Settings](https://github.com/matter-in-motion/mm/blob/master/docs/settings.md)
-* [Units](https://github.com/matter-in-motion/mm/blob/master/docs/units.md)
-* Extensions
-
+All loggers units are required to have one method `get(unitName)` that returns an actual logger instance with `{ unit: unitName }` added to every message.
 
 License: MIT.

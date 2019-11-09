@@ -5,11 +5,11 @@ const extension = require('../index');
 
 test('loads and inits extension from object', async t => {
   const app = new App({
-    extensions: [ extension ]
+    extensions: [extension]
   });
   await app.start();
 
-  const pino = app.require('loggers.pino');
+  const pino = app.require('loggers.pino').get('app');
   t.truthy(pino);
   t.is(typeof pino.info, 'function');
 });

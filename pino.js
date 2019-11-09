@@ -8,7 +8,11 @@ class Pino {
 
   init({ settings }) {
     const s = settings.pino || {};
-    this.instance = pino(s.options, s.destination);
+    this.pino = pino(s.options, s.destination);
+  }
+
+  get(unit) {
+    return this.pino.child({ unit });
   }
 }
 
