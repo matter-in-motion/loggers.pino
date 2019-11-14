@@ -1,7 +1,7 @@
 # Matter In Motion
 
-[![NPM Version](https://img.shields.io/npm/v/matter-in-motion/loggers.pino.svg?style=flat-square)](https://www.npmjs.com/package/matter-in-motion/loggers.pino)
-[![NPM Downloads](https://img.shields.io/npm/dt/matter-in-motion/loggers.pino.svg?style=flat-square)](https://www.npmjs.com/package/matter-in-motion/loggers.pino)
+[![NPM Version](https://img.shields.io/npm/v/@matter-in-motion/loggers.pino.svg?style=flat-square)](https://www.npmjs.com/package/@matter-in-motion/loggers.pino)
+[![NPM Downloads](https://img.shields.io/npm/dt/@matter-in-motion/loggers.pino.svg?style=flat-square)](https://www.npmjs.com/package/@matter-in-motion/loggers.pino)
 
 **Node.js framework for building applications (cli, server, etc...).**
 
