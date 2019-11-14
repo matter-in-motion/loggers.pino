@@ -24,12 +24,12 @@
   },
   "homepage": "https://github.com/matter-in-motion/loggers.pino#readme",
   "dependencies": {
-    "pino": "^5.13.0",
-    "pino-pretty": "^3.2.0"
+    "pino": "^5.13.6",
+    "pino-pretty": "^3.3.0"
   },
   "devDependencies": {
     "@matter-in-motion/app": "^1.0.0",
-    "ava": "^2.0.0",
+    "ava": "^2.4.0",
     "nyc": "^14.1.1"
   }
 }
